@@ -1,4 +1,4 @@
-# 🎉 Contador Regressivo – Aniversário Mateus
+# 🎉 Contador Regressivo – Aniversário
 
 Olá! Este projeto foi desenvolvido como parte do módulo front-end do curso Fullstack Java da EBAC. O objetivo principal era reforçar conhecimentos em JavaScript, Sass, HTML5/CSS3, lógica de programação e responsividade, criando uma landing page para celebrar e compartilhar a contagem regressiva do meu aniversário.
 
