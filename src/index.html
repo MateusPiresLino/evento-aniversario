@@ -3,25 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Aniversario</title>
+    <link rel="stylesheet" href="./css/style.scss">
+
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <title>Contagem para o aniversário de Mateus</title>
 </head>
 <body>
     <header class="menu">
-        <h1 class="menu__titulo">Falta pouco para o meu aniversário!</h1>
-        <h2 class="menu__titulo__subtitulo">Participe desse momento enviando um pix!</h2>
-    </header>
-    <section class="evento">
-        <div class="evento__contador">
-            <div class="evento__contador__item">
-                <span class="evento__contador__item__numero">
-                    00
-                </span>
-                <span class="evento__contador__item__numero__legenda">
-                    Dias
-                </span>
+        <div class="container">
+            <div class="cabecalho-tema">
+                <select id="seletor-tema" class="seletor-tema">
+                    <option value="auto">Automático</option>
+                    <option value="claro">Claro</option>
+                    <option value="escuro">Escuro</option>
+                </select>
+                <span class="icone-tema">🌙</span>
+                <span class="texto-tema">Modo Escuro</span>
             </div>
+            <h1 class="menu__titulo">Falta pouco para o meu aniversário!</h1>
+            <h3 class="menu__subtitulo">Participe desse momento enviando um pix!</h3>
         </div>
-        <button type="submit" class="evento__botao">Confirme o PIX</button>
-    </section>
+    </header>
+    <main class="conteudo-principal">
+        <section class="evento">
+            <div class="container">
+                <div class="input-data-bloco">
+                    <label for="dataEvento">Escolha uma data:</label>
+                    <input id="dataEvento" class="input-data" type="date">
+                </div>
+                <div class="contador">
+                    <div class="contador__item">
+                        <span id="dias" class="contador__numero">
+                            00
+                        </span>
+                        <span class="contador__legenda">
+                            Dias
+                        </span>
+                    </div>
+                    <div class="contador__item">
+                        <span id="horas" class="contador__numero">
+                            00
+                        </span>
+                        <span class="contador__legenda">
+                            Horas
+                        </span>
+                    </div>
+                    <div class="contador__item">
+                        <span id="minutos" class="contador__numero">
+                            00
+                        </span>
+                        <span class="contador__legenda">
+                            Minutos
+                        </span>
+                    </div>
+                    <div class="contador__item">
+                        <span id="segundos" class="contador__numero">
+                            00
+                        </span>
+                        <span class="contador__legenda">
+                            Segundos
+                        </span>
+                    </div>
+                </div>
+                <button type="button" class="evento__botao">Confirme o PIX</button>
+            </div>
+            <h2 id="mensagemFinal" class="mensagem-final"></h2>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; Mateus Lino</p>
+        </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

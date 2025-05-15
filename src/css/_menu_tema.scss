@@ -1,0 +1,42 @@
+.seletor-tema {
+    appearance: none; // Remove o estilo do SO
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    background: #fff url('data:image/svg+xml;utf8,<svg fill="black" ... />') no-repeat right 0.8rem center/1.2em; // Ícone de seta custom
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: border 0.2s, box-shadow 0.2s;
+
+    &:focus {
+        outline: none;
+        border-color: #7c3aed;
+        box-shadow: 0 0 0 2px #c4b5fd66;
+    }
+
+    .cabecalho-tema {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+
+    .seletor-tema {
+        min-width: 110px;
+    }
+    .icone-tema {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+    .texto-tema {
+        font-size: 1rem;
+        margin-left: 0.2rem;
+    }
+}
+}
+
+body.modo-escuro .seletor-tema {
+    background: #222;
+    color: #fff;
+    border-color: #444;
+}

@@ -1,0 +1,78 @@
+@use "variaveis";
+@use "contador";
+@use "botao";
+@use "layout";
+@use "menu_tema";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: variaveis.$fonte-principal;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    background-color: variaveis.$cor-secundaria;
+    color: variaveis.$cor-texto;
+    height: 100%;
+    transition: background-color 0.3s ease;
+}
+
+body.modo-escuro {
+        background-color: variaveis.$cor-fundo-escuro;
+        color: variaveis.$cor-texto-escuro;
+
+    .menu {
+        background-color: #1f1f1f;
+    }
+    .evento__botao {
+        background-color: #bb86fc;
+    }
+
+    footer {
+        background-color: #0a0a0a;
+    }
+
+    .icone-tema {
+        transform: rotate(180deg);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: variaveis.$padding-padrao;
+}
+
+.menu {
+    background-color: variaveis.$cor-primaria;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+
+    .icone-tema {
+        display: inline-block;
+        transition: transform 0.3s ease 0.3s ease;
+    }
+
+    &__titulo {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__subtitulo {
+        font-size: 1.2rem;
+    }
+}
+
+footer {
+    display: flex;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; // <-- adiciona essa linha!
+    justify-content: center; // para centralizar se for flex
+}

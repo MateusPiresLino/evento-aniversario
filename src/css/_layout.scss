@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    .contador {
+        gap: 1rem;
+
+        &__item {
+            padding: 0.5rem;
+
+            &__numero {
+                font-size: 2rem;
+            }
+
+            &__legenda {
+                font-size: 0.80rem;
+            }
+        }
+    }
+
+    .input-data-bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0 1.5rem 0;
+
+    label {
+        font-size: 1rem;
+        color: #444;
+        min-width: 110px;
+        text-align: right;
+    }
+    }
+
+    @media (max-width: 500px) {
+        .input-data-bloco {
+            flex-direction: column;
+            align-items: stretch;
+        label {
+            text-align: left;
+            margin-bottom: 0.3rem;
+        }
+    }
+}
+    .evento__botao {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
